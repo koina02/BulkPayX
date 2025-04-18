@@ -1,0 +1,32 @@
+<!-- File: dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - BulkPayX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Welcome to BulkPayX</h1>
+        <button class="action-btn" onclick="goToBulkPayment()">Make Bulk Payment</button>
+        <button class="action-btn" onclick="goToTransactionHistory()">View Transaction History</button>
+        <button class="action-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        function goToBulkPayment() {
+            window.location.href = "bulk-payment.html";
+        }
+
+        function goToTransactionHistory() {
+            window.location.href = "transaction-history.html";
+        }
+
+        function logout() {
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>
